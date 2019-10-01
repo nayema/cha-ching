@@ -21,9 +21,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: npm install, start
-      run: |
+      run:
         npm install
-        npm start --if-present
-        npm test --if-present
       env:
         CI: true
