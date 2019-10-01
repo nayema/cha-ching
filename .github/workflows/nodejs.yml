@@ -3,7 +3,10 @@ name: Node CI
 on:
   push:
     branches:
-    - master
+      - master
+  pull-requests:
+    branches:
+      - master
 
 jobs:
   build:
